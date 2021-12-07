@@ -9,10 +9,10 @@ export default function Friend(props) {
       {/* 👉 2- Fix the JSX so it displays real info coming into the component */}
       <div className='friend-info'>
         <div >
-          <h3>Name: Jessica</h3>
-          <p>Age: 26</p>
+          <h3>Name: {props.friend.name}</h3>
+          <p>Age: {props.friend.age}</p>
 
-          <p>Married: yes <button>change</button></p>
+          <p>Married: {props.friend.married ? 'Yes' : 'No'} <button onClick={() => props.changeStatus(props.friend.id)}>change</button></p>
           <div>Likes:
             <ul>
               {/* 👉 3- Loop over the friend's hobbies and generate <li/> elements as you go */}
