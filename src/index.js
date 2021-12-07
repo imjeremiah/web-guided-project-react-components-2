@@ -1,5 +1,7 @@
 // Importing React libs from node_modules folder
-import React from 'react'
+// default export
+import React from 'react' // -> var React = require('react');
+// named export
 import { render } from 'react-dom'
 
 // Importing the styles - the bundler does some magic!
